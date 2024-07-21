@@ -1,0 +1,42 @@
+@import url(../fonts/acline.css);
+
+.score {
+  font-family: 'AC';
+  letter-spacing: 2px;
+  font-size: 80px;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.plus-one {
+  font-family: 'AC';
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 30px;
+  color: aliceblue;
+  text-shadow: 0px 0px 4px rgba(138, 143, rgb(38, 255, 0), 0.2);
+  background: linear-gradient(180deg, #d0ff00 0%, #ef882b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  pointer-events: none;
+  user-select: none;
+  animation: move-up 2s forwards;
+}
+
+@keyframes move-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.text {
+  text-align: center;
+  font-size: 60px;
+  color: aliceblue;
+}
